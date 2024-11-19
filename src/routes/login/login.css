@@ -90,8 +90,8 @@
   text-decoration: underline;
 }
 .field input[type="submit"]{
-  background: #3498db;
-  border: 1px solid #2691d9;
+  background: #233846;
+  border: 1px solid #233846;
   color: white;
   font-size: 18px;
   letter-spacing: 1px;
@@ -100,7 +100,7 @@
   font-family: 'Montserrat',sans-serif;
 }
 .field input[type="submit"]:hover{
-  background: #2691d9;
+  background: #0a7fd3;
 }
 .login{
   color: white;

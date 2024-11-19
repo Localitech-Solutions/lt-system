@@ -100,7 +100,7 @@
   font-family: 'Montserrat',sans-serif;
 }
 .field input[type="submit"]:hover{
-  background: #0a7fd3;
+  background: #565a1b;
 }
 .login{
   color: white;
@@ -113,27 +113,6 @@
   color: white;
   margin: 0 0 20px 0;
 }
-.facebook,.instagram{
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  margin-left: 10px;
-}
-.facebook{
-  margin-left: 0;
-  background: #4267B2;
-  border: 1px solid #3e61a8;
-}
-.instagram{
-  background: #E1306C;
-  border: 1px solid #df2060;
-}
-.facebook:hover{
-  background: #3e61a8;
-}
-.instagram:hover{
-  background: #df2060;
-}
 .links i{
   font-size: 17px;
 }
@@ -143,18 +122,6 @@ i span{
   letter-spacing: 1px;
   font-size: 16px;
   font-family: 'Poppins',sans-serif;
-}
-.signup{
-  font-size: 15px;
-  color: white;
-  font-family: 'Poppins',sans-serif;
-}
-.signup a{
-  color: #3498db;
-  text-decoration: none;
-}
-.signup a:hover{
-  text-decoration: underline;
 }
 .logo {
     width: 150px; 

@@ -20,18 +20,21 @@
   width: 100%;
   background: rgba(0,0,0,0.7);
 }
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 999;
   text-align: center;
-  padding: 60px 32px;
+  padding: 40px; 
   width: 370px;
-  transform: translate(-50%,-50%);
-  background: rgba(255,255,255,0.04);
-  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px; 
+  border: 0.5px solid rgba(255, 255, 255, 0.04); 
 }
+
 .content header{
   color: white;
   font-size: 33px;
@@ -89,19 +92,23 @@
 .pass:hover a{
   text-decoration: underline;
 }
-.field input[type="submit"]{
-  background: #f5e50a;
-  border: 1px solid #44411a;
+  input[type="submit"] {
+  background: #131313;
+  border: 1px solid #131313;
   color: white;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.2s ease-in-out; 
 }
-.field input[type="submit"]:hover{
-  background: #565a1b;
+
+input[type="submit"]:hover {
+  background: #d4c70e;
+  transition: background 0.2s ease-in-out;
 }
+
 .login{
   color: white;
   margin: 20px 0;

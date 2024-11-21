@@ -10,6 +10,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  transition: background-image 2s ease-in-out;
 }
 .bg-img:after{
   position: absolute;
@@ -44,17 +45,19 @@
 }
 .field{
   position: relative;
-  height: 45px;
+  height: 50px;
   width: 100%;
   display: flex;
   background: rgba(255,255,255,0.94);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .field span{
   color: #222;
   width: 40px;
-  line-height: 45px;
+  line-height: 50px;
 }
-.field input{
+  input {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -62,7 +65,9 @@
   outline: none;
   color: #222;
   font-size: 16px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px; 
+  padding: 0 15px; 
 }
 .space{
   margin-top: 16px;
@@ -96,15 +101,18 @@
   background: #131313;
   border: 1px solid #131313;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
   transition: background 0.2s ease-in-out; 
 }
 
-input[type="submit"]:hover {
+  input[type="submit"]:hover {
   background: #d4c70e;
   transition: background 0.2s ease-in-out;
 }
@@ -134,7 +142,7 @@ i span{
     width: 150px; 
     height: 150px; 
     border-radius: 50%; 
-    border: 2px solid #ffffff; 
+    border: 2px solid #202020; 
     object-fit: cover; 
     margin-bottom: 20px; 
   }

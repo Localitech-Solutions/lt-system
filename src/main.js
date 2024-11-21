@@ -6,7 +6,7 @@ app.on("ready", () => {
         height: 600
     });
 
-    win.loadFile("./routes/home/home.html");
+    win.loadFile("./routes/login/login.html");
 });
 
 app.on("window-all-closed", () => {

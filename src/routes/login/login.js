@@ -14,4 +14,10 @@ const images = [
   }
   
   setInterval(changeBackground, 7000);
-  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const content = document.querySelector('.content');
+    setTimeout(() => {
+      content.classList.add('active');
+    }, 500);
+  });

@@ -9,7 +9,6 @@ function changeBackground() {
 }
 setInterval(changeBackground, 7000);
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const content = document.querySelector('.content');
   setTimeout(() => {
@@ -17,42 +16,53 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 500);
 }); 
   
-  const passField = document.querySelector('.pass-key');
-  const showBtn = document.querySelector('.show');
+const passField = document.querySelector('.pass-key');
+const showBtn = document.querySelector('.show');
 
-  showBtn.addEventListener('click', () => {
-    if (passField.type === 'password') {
-      passField.type = 'text';
-      showBtn.textContent = 'HIDE';
-    } else {
-      passField.type = 'password';
-      showBtn.textContent = 'SHOW';
-    }
-  });
+showBtn.addEventListener('click', () => {
+  if (passField.type === 'password') {
+    passField.type = 'text';
+    showBtn.textContent = 'HIDE';
+  } else {
+    passField.type = 'password';
+    showBtn.textContent = 'SHOW';
+  }
+});
 
-  
+const form = document.querySelector('#login-form');
+const usernameField = document.querySelector('#username');
+const passwordField = document.querySelector('#password');
 
-  const form = document.querySelector('#login-form');
-  const usernameField = document.querySelector('#username');
-  const passwordField = document.querySelector('#password');
-  const errorMessage = document.querySelector('#error-message') || document.createElement('p');
-  
+
+let errorMessage = document.querySelector('#error-message');
+if (!errorMessage) {
+    errorMessage = document.createElement('p');
+    errorMessage.id = 'error-message';
+    errorMessage.style.color = '#e53935'; 
+    errorMessage.style.fontFamily = 'Poppins, sans-serif'; 
+    errorMessage.style.fontSize = '16px'; 
+    errorMessage.style.marginTop = '10px'; 
+    errorMessage.style.textAlign = 'center'; 
+}
+
    
-  console.log(form, usernameField, passwordField, errorMessage);
-  
-  form.addEventListener('submit', (e) => {
-      e.preventDefault();
-  
-      const username = usernameField.value.trim();
-      const password = passwordField.value.trim();
-  
-      if (username === 'admin' && password === '1234') {
-          console.log('Login exitoso');
-          window.location.href = 'routes/home/home.html'; 
-      } else {
-          console.log('Credenciales incorrectas');
-          errorMessage.textContent = 'Usuario o contraseña incorrectos.';
-          form.appendChild(errorMessage);
-      }
-  });
-  
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const username = usernameField.value.trim();
+    const password = passwordField.value.trim();
+
+    errorMessage.textContent = ''; 
+
+    if (username === 'admin' && password === '1234') {
+        console.log('Login exitoso');
+        window.location.href = 'routes/home/home.html'; 
+    } else {
+        console.log('Credenciales incorrectas');
+        errorMessage.textContent = 'Usuario o contraseña incorrectos.';
+        
+        if (!form.contains(errorMessage)) {
+            form.appendChild(errorMessage);
+        }
+    }
+});

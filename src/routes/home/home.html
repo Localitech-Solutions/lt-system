@@ -4,15 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css"> 
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="home.js" defer></script>
 </head>
 <body>
+    <div id="dynamic-background"></div>
     <header>
-        <h1>Bienvenido a la Página de Inicio</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo" class="logo-img">
+            </div>
+            <nav>
+                <div class="nav-buttons">
+                    <button onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
+                    <button onclick="openUserManual()"><i class="fas fa-book"></i></button>
+                    <button onclick="openAbout()"><i class="fas fa-info-circle"></i></button>
+                    <button onclick="openCopyright()"><i class="fas fa-copyright"></i></button>
+                </div>
+            </nav>
+        </div>
     </header>
+    
+    
+
+    
     <main>
-        <p>Has iniciado sesión correctamente.</p>
-        <a href="login.html" class="logout">Cerrar Sesión</a>
+
+        
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-car"></i>
+                <h3>Contactless Washing</h3>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-pump-soap"></i>
+                <h3>Safety Materials</h3>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-tools"></i>
+                <h3>Modern Equipment</h3>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-broom"></i>
+                <h3>Extensive Cleaning</h3>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

@@ -40,8 +40,8 @@ if (!errorMessage) {
     errorMessage.id = 'error-message';
     errorMessage.style.color = '#e53935'; 
     errorMessage.style.fontFamily = 'Poppins, sans-serif'; 
-    errorMessage.style.fontSize = '16px'; 
-    errorMessage.style.marginTop = '10px'; 
+    errorMessage.style.fontSize = 'clamp(0.9rem, 1vw, 1.2rem)'; 
+    errorMessage.style.marginTop = '1vh'; 
     errorMessage.style.textAlign = 'center'; 
 }
 

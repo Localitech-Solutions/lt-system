@@ -27,12 +27,12 @@
   left: 50%;
   z-index: 999;
   text-align: center;
-  padding: 40px;
-  width: 370px;
+  padding: 4vh;
+  width: 30vw;
   transform: translate(-50%, 0);
   background: rgba(255, 255, 255, 0.04);
-  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
+  box-shadow: -0.1rem 0.4rem 2.8rem 0 rgba(0, 0, 0, 0.75);
+  border-radius: 1.5rem;
   opacity: 0; 
   transition: all 0.8s ease-in-out; 
 }
@@ -45,24 +45,24 @@
 
 .content header{
   color: white;
-  font-size: 33px;
+  font-size: clamp(2rem, 2vw, 3rem);
   font-weight: 600;
-  margin: 0 0 35px 0;
+  margin: 0 0 2.5vh 0;
   font-family: 'Montserrat',sans-serif;
 }
 .field{
   position: relative;
-  height: 50px;
+  height: 6vh;
   width: 100%;
   display: flex;
   background: rgba(255,255,255,0.94);
-  border-radius: 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2.5vh;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 .field span{
   color: #222;
-  width: 40px;
-  line-height: 50px;
+  width: 4vw;
+  line-height: 6vh;
 }
   input {
   height: 100%;
@@ -71,23 +71,26 @@
   border: none;
   outline: none;
   color: #222;
-  font-size: 16px;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
   font-family: 'Poppins', sans-serif;
-  border-radius: 25px; 
-  padding: 0 15px; 
+  border-radius: 2.5vh; 
+  padding: 0 1.5vw; 
 }
 .space{
-  margin-top: 16px;
+  margin-top: 2vh;
 }
 .show{
   position: absolute;
-  right: 13px;
-  font-size: 13px;
-  font-weight: 700;
+  right: 1.5vw;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-weight: bold;
   color: #222;
   display: none;
   cursor: pointer;
   font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
 }
 .pass-key:valid ~ .show{
   display: block;
@@ -100,21 +103,22 @@
   color: white;
   text-decoration: none;
   font-family: 'Poppins',sans-serif;
+  font-size: clamp(0.9rem, 1vw, 1.2vw);
 }
 .pass:hover a{
   text-decoration: underline;
 }
   input[type="submit"] {
   background: #131313;
-  border: 1px solid #131313;
+  border: 0.1rem solid #131313;
   color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+  letter-spacing: clamp(0.05rem, 0.2vw, 0.1rem);
   font-weight: 600;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 10px;
-  padding: 15px 20px;
+  border-radius: 1rem;
+  padding: 1.5vh 2vw;
   width: 100%;
   transition: background 0.2s ease-in-out; 
 }
@@ -126,32 +130,34 @@
 
 .login{
   color: white;
-  margin: 20px 0;
+  margin: 2vh 0;
   font-family: 'Poppins',sans-serif;
+  font-size: calc(1rem, 1vw, 1.5rem);
 }
 .links{
   display: flex;
   cursor: pointer;
   color: white;
-  margin: 0 0 20px 0;
+  margin: 0 0 2vh 0;
 }
 .links i{
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 i span{
-  margin-left: 8px;
+  margin-left: 1vw;
   font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 16px;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
   font-family: 'Poppins',sans-serif;
+  font-size: clamp(1rem, 1vw, 1.5rem);
 }
 .logo {
-    width: 150px; 
-    height: 150px; 
+    width: 10vw; 
+    height: 10vw; 
     border-radius: 50%; 
-    border: 2px solid #202020; 
+    border: 0.2vw solid #202020; 
     object-fit: cover; 
-    margin-bottom: 20px; 
+    margin-bottom: 2vh; 
   }
 
   body{
@@ -160,3 +166,4 @@ i span{
     overflow: hidden;
     height: 100vh;
   }
+

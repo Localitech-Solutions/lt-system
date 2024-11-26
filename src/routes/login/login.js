@@ -1,5 +1,5 @@
 
-const images = ['bg.jpg', 'bg2.jpg', 'bg3.jpg'];
+const images = ['../../public/bg.jpg', '../../public/bg2.jpg', '../../public/bg3.jpg'];
 let currentIndex = 0;
 const bgImgElement = document.querySelector('.bg-img');
 
@@ -56,7 +56,7 @@ form.addEventListener('submit', (e) => {
 
     if (username === 'admin' && password === '1234') {
         console.log('Login exitoso');
-        window.location.href = 'routes/home/home.html'; 
+        window.location.href = '../home/home.html'; 
     } else {
         console.log('Credenciales incorrectas');
         errorMessage.textContent = 'Usuario o contraseña incorrectos.';

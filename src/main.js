@@ -2,10 +2,10 @@ import { app, BrowserWindow } from "electron";
 
 app.on("ready", () => {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600
+        show: false
     });
-
+    win.maximize();
+    win.show();
     win.loadFile("./routes/login/login.html");
 });
 

@@ -1,4 +1,5 @@
-#dynamic-background{
+
+#dynamic-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,71 +28,75 @@ body {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 12vh;
-    padding: 0 3vw;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6rem; 
+    height: 100vh; 
     background-color: #1E1E1E;
-}
-
-.container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-    margin: 0; 
-    padding: 0; 
+    padding: 3vh 0;
+    z-index: 1000;
+    box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 
-.logo {
+.sidebar .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 1vh 1vw;
+    justify-content: center;
+    margin-bottom: 2vh;
 }
 
-.logo img {
+.sidebar .logo img {
     width: 4rem;
     height: auto;
-    margin: 0;
-    background-color: transparent;
-    display: block;
     border-radius: 50%;
+    margin-bottom: 0.5rem;
 }
 
-.nav-links {
-    list-style: none;
+.sidebar .logo-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.nav-icons {
     display: flex;
-    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 500;
-    transition: color 0.3s ease;
+.nav-icons button {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-icons button:hover {
     color: #d4c70e;
+    transform: scale(1.2);
+}
+
+.nav-icons button:focus {
+    outline: none;
 }
 
 
-.hero {
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(80%);
+main {
+    margin-left: 6rem; 
+    padding: 3vh 3vw;
 }
 
 
@@ -99,12 +104,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 3vw;
     padding: 2vh 2vw;
     background: none;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 6rem); 
 }
 
 .feature {
@@ -113,9 +118,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2vh;
+    padding: 3vh;
     border-radius: 1rem;
-    box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 20vw;
     height: auto;
@@ -128,7 +133,7 @@ header {
 }
 
 .feature h3 {
-    margin-bottom: 1vh 0;
+    margin: 1vh 0;
     font-size: 1.8rem;
     color: #FFFFFF;
 }
@@ -138,7 +143,8 @@ header {
     color: #BBBBBB;
 }
 
-button{
+
+button {
     background-color: #d4c70e;
     color: #FFFFFF;
     border: none;
@@ -153,36 +159,21 @@ button.hover {
     background-color: #696304;
 }
 
-.nav-buttons {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 2vw; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    background-color: #1E1E1E; 
-}
-
 
 .nav-buttons button {
-    background-color: transparent; 
+    background-color: transparent;
     color: white;
-    border: none; 
-    font-size: 2rem;  
+    border: none;
+    font-size: 2rem;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3 ease; 
+    transition: transform 0.3s ease, color 0.3 ease;
 }
 
-
 .nav-buttons button:hover {
-    color: #d4c70e; 
-    transform: scale(1.2); 
+    color: #d4c70e;
+    transform: scale(1.2);
 }
 
 .nav-buttons button:focus {
     outline: none;
 }
-
-

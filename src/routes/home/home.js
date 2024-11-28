@@ -1,5 +1,11 @@
 function logout() {
-    alert('Cerrar sesión'); 
+
+    showLoadingScreen();
+    
+    setTimeout(() => {
+        window.location.href = '../login/login.html';
+
+    }, 1000);
 
 }
 
@@ -8,8 +14,13 @@ function openUserManual() {
 
 }
 
-function openAbout() {
-    alert('Abrir página About');
+function navigateToAbout() {
+    showLoadingScreen();
+
+    setTimeout(() => {
+        window.location.href = '../about/about.html';
+    }, 1000);
+
 
 }
 

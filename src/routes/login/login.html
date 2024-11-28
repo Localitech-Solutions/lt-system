@@ -7,32 +7,37 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="stylesheet" href="../../modules/loading/loading.css">
       <script src="../../modules/loading/loading.js" defer></script>
+
       
    </head>
    <body>
+      <div id="loading-screen" class="loading-screen hidden">
+          <div class="spinner"></div>
+      </div>
       <div class="bg-img">
-         <div class="content">
-            <img src="../../public/logo.jpg" alt="Logo" class="logo">
-            <header>Inicio de Sesión</header>
-            <form id="login-form">
-               <div class="field">
-                  <span class="fa fa-user"></span>
-                  <input type="text" id="username" required placeholder="USUARIO">
-               </div>
-               <div class="field space">
-                  <span class="fa fa-lock"></span>
-                  <input type="password" id="password" class="pass-key" required placeholder="CONTRASEÑA">
-                  <span class="show">SHOW</span>
-               </div>
-               <div class="pass">
-                  <a href="#"></a>
-               </div>
-               <div>
-                  <input type="submit" value="LOGIN">
-               </div>
-            </form>
-         </div>
+          <div class="content">
+              <img src="../../public/logo.jpg" alt="Logo" class="logo">
+              <header>Inicio de Sesión</header>
+              <form id="login-form">
+                  <div class="field">
+                      <span class="fa fa-user"></span>
+                      <input type="text" id="username" required placeholder="USUARIO">
+                  </div>
+                  <div class="field space">
+                      <span class="fa fa-lock"></span>
+                      <input type="password" id="password" class="pass-key" required placeholder="CONTRASEÑA">
+                      <span class="show">SHOW</span>
+                  </div>
+                  <div class="pass">
+                      <a href="#"></a>
+                  </div>
+                  <div>
+                      <input type="submit" value="LOGIN">
+                  </div>
+              </form>
+          </div>
       </div>
       <script src="login.js"></script>
-   </body>
+  </body>
+  
 </html>

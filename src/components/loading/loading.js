@@ -16,6 +16,4 @@ function hideLoadingScreen() {
 
 
 window.addEventListener('beforeunload', showLoadingScreen);
-
-
 window.addEventListener('load', hideLoadingScreen);

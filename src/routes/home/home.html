@@ -8,30 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="home.js" defer></script>
-    <link rel="stylesheet" href="../../modules/loading/loading.css">
-    <script src="../../modules/loading/loading.js" defer></script>
-
+    <!-- Loading Screen Component -->
+    <link rel="stylesheet" href="../../components/loading/loading.css">
+    <script src="../../components/loading/loading.js" defer></script>
+    <!-- Sidebar component -->
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+    <script src="../../components/sidebar/sidebar.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
     <div id="loading-screen" class="loading-screen hidden">
         <div class="spinner"></div>
     </div>
+    <div id="sidebarDiv"></div>
+
     <div id="dynamic-background"></div>
-
-   
-    <aside class="sidebar">
-        <div class="logo">
-            <img src="../../public/logo.jpg" alt="Logo" class="logo-img">
-            <p class="logo-text"></p>
-        </div>
-        <nav class="nav-icons">
-            <button onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
-            <button onclick="openUserManual()"><i class="fas fa-book"></i></button>
-            
-        </nav>
-    </aside>
-
-    
     <main>
         <section class="features">
             <div class="feature">

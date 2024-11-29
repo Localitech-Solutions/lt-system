@@ -22,39 +22,35 @@
     <aside class="sidebar">
         <div class="logo">
             <img src="../../public/logo.jpg" alt="Logo" class="logo-img">
-            <p class="logo-text"></p>
         </div>
         <nav class="nav-icons">
-            <button onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
-            <button onclick="openUserManual()"><i class="fas fa-book"></i></button>
-            
+            <button onclick="openInventory()"><i class="fas fa-boxes"></i></button> <!-- Inventario -->
+            <button onclick="openManufacturingOrders()"><i class="fas fa-cogs"></i></button> <!-- Órdenes de Fabricación -->
+            <button onclick="openReports()"><i class="fas fa-file-alt"></i></button> <!-- Bitácoras y Reportes -->
+            <button onclick="openPurchaseOrders()"><i class="fas fa-shopping-cart"></i></button> <!-- Órdenes de Compra -->
+            <button onclick="openUserManual()"><i class="fas fa-book"></i></button> <!-- Manual -->
+            <button onclick="logout()"><i class="fas fa-sign-out-alt"></i></button> <!-- Logout -->
         </nav>
     </aside>
+    
 
     
     <main>
         <section class="features">
             <div class="feature">
-                <i class="fas fa-car"></i>
-                <h3>Contactless Washing</h3>
-                <p>Sample text. Click to select the Text Element.</p>
+                <i class="fas fa-boxes"></i> <!-- Inventario -->
             </div>
             <div class="feature">
-                <i class="fas fa-pump-soap"></i>
-                <h3>Safety Materials</h3>
-                <p>Sample text. Click to select the Text Element.</p>
+                <i class="fas fa-cogs"></i> <!-- Órdenes de Fabricación -->
             </div>
             <div class="feature">
-                <i class="fas fa-tools"></i>
-                <h3>Modern Equipment</h3>
-                <p>Sample text. Click to select the Text Element.</p>
+                <i class="fas fa-file-alt"></i> <!-- Bitácoras y Reportes -->
             </div>
             <div class="feature">
-                <i class="fas fa-broom"></i>
-                <h3>Extensive Cleaning</h3>
-                <p>Sample text. Click to select the Text Element.</p>
+                <i class="fas fa-shopping-cart"></i> <!-- Órdenes de Compra -->
             </div>
         </section>
     </main>
+    
 </body>
 

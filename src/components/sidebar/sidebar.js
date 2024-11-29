@@ -7,7 +7,7 @@ sidebarComponent.innerHTML = `
     <!-- Sidebar header -->
     <header class="sidebar-header">
       <a href="#" class="header-logo">
-        <img src="../../public/logo.jpg" alt="CodingNepal">
+        <div class="logo"></div>
       </a>
       <button class="toggler sidebar-toggler" onclick="collapseSidebar()">
         <span class="material-symbols-rounded">chevron_left</span>
